@@ -25,7 +25,7 @@ resolve imports at compile time.
 To use Protocol Buffers with JavaScript, you need two main components:
 
 1. The protobuf runtime library.  You can install this with
-   `npm install google-protobuf`, or use the files in this directory.
+   `npm install @kintegrate/google-protobuf`, or use the files in this directory.
     If npm is not being used, as of 3.3.0, the files needed are located in binary subdirectory;
     arith.js, constants.js, decoder.js, encoder.js, map.js, message.js, reader.js, utils.js, writer.js
 2. The Protocol Compiler `protoc`.  This translates `.proto` files
