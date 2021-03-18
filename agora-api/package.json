@@ -1,0 +1,32 @@
+{
+  "author": {
+    "name": "Kik Engineering",
+    "email": "engineering@kik.com"
+  },
+  "bugs": {
+    "url": "https://github.com/kinecosystem/agora-api/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@types/google-protobuf": "^3.7.2",
+    "@kintegrate/google-protobuf": "^4.0.0-rc.2",
+    "grpc": "^1.24.3"
+  },
+  "deprecated": false,
+  "description": "Agora API",
+  "devDependencies": {
+    "grpc-tools": "^1.9.1",
+    "grpc_tools_node_protoc_ts": "^5.0.1"
+  },
+  "files": [
+    "node/"
+  ],
+  "homepage": "https://github.com/kinecosystem/agora-api#readme",
+  "license": "MIT",
+  "name": "@kintegrate/agora-api",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kinecosystem/agora-api.git"
+  },
+  "version": "0.25.0"
+}
