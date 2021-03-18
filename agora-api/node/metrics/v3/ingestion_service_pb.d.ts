@@ -4,9 +4,9 @@
 /* tslint:disable */
 /* eslint-disable */
 
-import * as jspb from "google-protobuf";
+import * as jspb from "@kintegrate/google-protobuf";
 
-export class SubmitRequest extends jspb.Message { 
+export class SubmitRequest extends jspb.Message {
 
     serializeBinary(): Uint8Array;
     toObject(includeInstance?: boolean): SubmitRequest.AsObject;
@@ -23,7 +23,7 @@ export namespace SubmitRequest {
     }
 }
 
-export class SubmitResponse extends jspb.Message { 
+export class SubmitResponse extends jspb.Message {
     getResult(): SubmitResponse.Result;
     setResult(value: SubmitResponse.Result): SubmitResponse;
 

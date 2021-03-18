@@ -4,12 +4,12 @@
 /* tslint:disable */
 /* eslint-disable */
 
-import * as jspb from "google-protobuf";
-import * as google_protobuf_descriptor_pb from "google-protobuf/google/protobuf/descriptor_pb";
-import * as google_protobuf_duration_pb from "google-protobuf/google/protobuf/duration_pb";
-import * as google_protobuf_timestamp_pb from "google-protobuf/google/protobuf/timestamp_pb";
+import * as jspb from "@kintegrate/google-protobuf";
+import * as google_protobuf_descriptor_pb from "@kintegrate/google-protobuf/google/protobuf/descriptor_pb";
+import * as google_protobuf_duration_pb from "@kintegrate/google-protobuf/google/protobuf/duration_pb";
+import * as google_protobuf_timestamp_pb from "@kintegrate/google-protobuf/google/protobuf/timestamp_pb";
 
-export class FieldRules extends jspb.Message { 
+export class FieldRules extends jspb.Message {
 
     hasMessage(): boolean;
     clearMessage(): void;
@@ -183,7 +183,7 @@ export namespace FieldRules {
 
     export enum TypeCase {
         TYPE_NOT_SET = 0,
-    
+
     FLOAT = 1,
 
     DOUBLE = 2,
@@ -230,7 +230,7 @@ export namespace FieldRules {
 
 }
 
-export class FloatRules extends jspb.Message { 
+export class FloatRules extends jspb.Message {
 
     hasConst(): boolean;
     clearConst(): void;
@@ -294,7 +294,7 @@ export namespace FloatRules {
     }
 }
 
-export class DoubleRules extends jspb.Message { 
+export class DoubleRules extends jspb.Message {
 
     hasConst(): boolean;
     clearConst(): void;
@@ -358,7 +358,7 @@ export namespace DoubleRules {
     }
 }
 
-export class Int32Rules extends jspb.Message { 
+export class Int32Rules extends jspb.Message {
 
     hasConst(): boolean;
     clearConst(): void;
@@ -422,7 +422,7 @@ export namespace Int32Rules {
     }
 }
 
-export class Int64Rules extends jspb.Message { 
+export class Int64Rules extends jspb.Message {
 
     hasConst(): boolean;
     clearConst(): void;
@@ -486,7 +486,7 @@ export namespace Int64Rules {
     }
 }
 
-export class UInt32Rules extends jspb.Message { 
+export class UInt32Rules extends jspb.Message {
 
     hasConst(): boolean;
     clearConst(): void;
@@ -550,7 +550,7 @@ export namespace UInt32Rules {
     }
 }
 
-export class UInt64Rules extends jspb.Message { 
+export class UInt64Rules extends jspb.Message {
 
     hasConst(): boolean;
     clearConst(): void;
@@ -614,7 +614,7 @@ export namespace UInt64Rules {
     }
 }
 
-export class SInt32Rules extends jspb.Message { 
+export class SInt32Rules extends jspb.Message {
 
     hasConst(): boolean;
     clearConst(): void;
@@ -678,7 +678,7 @@ export namespace SInt32Rules {
     }
 }
 
-export class SInt64Rules extends jspb.Message { 
+export class SInt64Rules extends jspb.Message {
 
     hasConst(): boolean;
     clearConst(): void;
@@ -742,7 +742,7 @@ export namespace SInt64Rules {
     }
 }
 
-export class Fixed32Rules extends jspb.Message { 
+export class Fixed32Rules extends jspb.Message {
 
     hasConst(): boolean;
     clearConst(): void;
@@ -806,7 +806,7 @@ export namespace Fixed32Rules {
     }
 }
 
-export class Fixed64Rules extends jspb.Message { 
+export class Fixed64Rules extends jspb.Message {
 
     hasConst(): boolean;
     clearConst(): void;
@@ -870,7 +870,7 @@ export namespace Fixed64Rules {
     }
 }
 
-export class SFixed32Rules extends jspb.Message { 
+export class SFixed32Rules extends jspb.Message {
 
     hasConst(): boolean;
     clearConst(): void;
@@ -934,7 +934,7 @@ export namespace SFixed32Rules {
     }
 }
 
-export class SFixed64Rules extends jspb.Message { 
+export class SFixed64Rules extends jspb.Message {
 
     hasConst(): boolean;
     clearConst(): void;
@@ -998,7 +998,7 @@ export namespace SFixed64Rules {
     }
 }
 
-export class BoolRules extends jspb.Message { 
+export class BoolRules extends jspb.Message {
 
     hasConst(): boolean;
     clearConst(): void;
@@ -1022,7 +1022,7 @@ export namespace BoolRules {
     }
 }
 
-export class StringRules extends jspb.Message { 
+export class StringRules extends jspb.Message {
 
     hasConst(): boolean;
     clearConst(): void;
@@ -1215,7 +1215,7 @@ export namespace StringRules {
 
     export enum WellKnownCase {
         WELL_KNOWN_NOT_SET = 0,
-    
+
     EMAIL = 12,
 
     HOSTNAME = 13,
@@ -1240,7 +1240,7 @@ export namespace StringRules {
 
 }
 
-export class BytesRules extends jspb.Message { 
+export class BytesRules extends jspb.Message {
 
     hasConst(): boolean;
     clearConst(): void;
@@ -1361,7 +1361,7 @@ export namespace BytesRules {
 
     export enum WellKnownCase {
         WELL_KNOWN_NOT_SET = 0,
-    
+
     IP = 10,
 
     IPV4 = 11,
@@ -1372,7 +1372,7 @@ export namespace BytesRules {
 
 }
 
-export class EnumRules extends jspb.Message { 
+export class EnumRules extends jspb.Message {
 
     hasConst(): boolean;
     clearConst(): void;
@@ -1415,7 +1415,7 @@ export namespace EnumRules {
     }
 }
 
-export class MessageRules extends jspb.Message { 
+export class MessageRules extends jspb.Message {
 
     hasSkip(): boolean;
     clearSkip(): void;
@@ -1446,7 +1446,7 @@ export namespace MessageRules {
     }
 }
 
-export class RepeatedRules extends jspb.Message { 
+export class RepeatedRules extends jspb.Message {
 
     hasMinItems(): boolean;
     clearMinItems(): void;
@@ -1491,7 +1491,7 @@ export namespace RepeatedRules {
     }
 }
 
-export class MapRules extends jspb.Message { 
+export class MapRules extends jspb.Message {
 
     hasMinPairs(): boolean;
     clearMinPairs(): void;
@@ -1543,7 +1543,7 @@ export namespace MapRules {
     }
 }
 
-export class AnyRules extends jspb.Message { 
+export class AnyRules extends jspb.Message {
 
     hasRequired(): boolean;
     clearRequired(): void;
@@ -1579,7 +1579,7 @@ export namespace AnyRules {
     }
 }
 
-export class DurationRules extends jspb.Message { 
+export class DurationRules extends jspb.Message {
 
     hasRequired(): boolean;
     clearRequired(): void;
@@ -1650,7 +1650,7 @@ export namespace DurationRules {
     }
 }
 
-export class TimestampRules extends jspb.Message { 
+export class TimestampRules extends jspb.Message {
 
     hasRequired(): boolean;
     clearRequired(): void;

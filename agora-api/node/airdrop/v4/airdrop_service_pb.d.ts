@@ -4,11 +4,11 @@
 /* tslint:disable */
 /* eslint-disable */
 
-import * as jspb from "google-protobuf";
+import * as jspb from "@kintegrate/google-protobuf";
 import * as validate_validate_pb from "../../validate/validate_pb";
 import * as common_v4_model_pb from "../../common/v4/model_pb";
 
-export class RequestAirdropRequest extends jspb.Message { 
+export class RequestAirdropRequest extends jspb.Message {
 
     hasAccountId(): boolean;
     clearAccountId(): void;
@@ -40,7 +40,7 @@ export namespace RequestAirdropRequest {
     }
 }
 
-export class RequestAirdropResponse extends jspb.Message { 
+export class RequestAirdropResponse extends jspb.Message {
     getResult(): RequestAirdropResponse.Result;
     setResult(value: RequestAirdropResponse.Result): RequestAirdropResponse;
 

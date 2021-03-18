@@ -4,10 +4,10 @@
 /* tslint:disable */
 /* eslint-disable */
 
-import * as jspb from "google-protobuf";
+import * as jspb from "@kintegrate/google-protobuf";
 import * as validate_validate_pb from "../../validate/validate_pb";
 
-export class SolanaAccountId extends jspb.Message { 
+export class SolanaAccountId extends jspb.Message {
     getValue(): Uint8Array | string;
     getValue_asU8(): Uint8Array;
     getValue_asB64(): string;
@@ -30,7 +30,7 @@ export namespace SolanaAccountId {
     }
 }
 
-export class TransactionId extends jspb.Message { 
+export class TransactionId extends jspb.Message {
     getValue(): Uint8Array | string;
     getValue_asU8(): Uint8Array;
     getValue_asB64(): string;
@@ -53,7 +53,7 @@ export namespace TransactionId {
     }
 }
 
-export class Blockhash extends jspb.Message { 
+export class Blockhash extends jspb.Message {
     getValue(): Uint8Array | string;
     getValue_asU8(): Uint8Array;
     getValue_asB64(): string;
@@ -76,7 +76,7 @@ export namespace Blockhash {
     }
 }
 
-export class TransactionSignature extends jspb.Message { 
+export class TransactionSignature extends jspb.Message {
     getValue(): Uint8Array | string;
     getValue_asU8(): Uint8Array;
     getValue_asB64(): string;
@@ -99,7 +99,7 @@ export namespace TransactionSignature {
     }
 }
 
-export class Transaction extends jspb.Message { 
+export class Transaction extends jspb.Message {
     getValue(): Uint8Array | string;
     getValue_asU8(): Uint8Array;
     getValue_asB64(): string;
@@ -122,7 +122,7 @@ export namespace Transaction {
     }
 }
 
-export class TransactionError extends jspb.Message { 
+export class TransactionError extends jspb.Message {
     getReason(): TransactionError.Reason;
     setReason(value: TransactionError.Reason): TransactionError;
 
@@ -163,7 +163,7 @@ export namespace TransactionError {
 
 }
 
-export class StellarTransaction extends jspb.Message { 
+export class StellarTransaction extends jspb.Message {
     getResultXdr(): Uint8Array | string;
     getResultXdr_asU8(): Uint8Array;
     getResultXdr_asB64(): string;

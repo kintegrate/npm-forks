@@ -4,10 +4,10 @@
 /* tslint:disable */
 /* eslint-disable */
 
-import * as jspb from "google-protobuf";
+import * as jspb from "@kintegrate/google-protobuf";
 import * as validate_validate_pb from "../../validate/validate_pb";
 
-export class StellarAccountId extends jspb.Message { 
+export class StellarAccountId extends jspb.Message {
     getValue(): string;
     setValue(value: string): StellarAccountId;
 
@@ -28,7 +28,7 @@ export namespace StellarAccountId {
     }
 }
 
-export class TransactionHash extends jspb.Message { 
+export class TransactionHash extends jspb.Message {
     getValue(): Uint8Array | string;
     getValue_asU8(): Uint8Array;
     getValue_asB64(): string;
@@ -51,7 +51,7 @@ export namespace TransactionHash {
     }
 }
 
-export class InvoiceHash extends jspb.Message { 
+export class InvoiceHash extends jspb.Message {
     getValue(): Uint8Array | string;
     getValue_asU8(): Uint8Array;
     getValue_asB64(): string;
@@ -74,7 +74,7 @@ export namespace InvoiceHash {
     }
 }
 
-export class Invoice extends jspb.Message { 
+export class Invoice extends jspb.Message {
     clearItemsList(): void;
     getItemsList(): Array<Invoice.LineItem>;
     setItemsList(value: Array<Invoice.LineItem>): Invoice;
@@ -97,7 +97,7 @@ export namespace Invoice {
     }
 
 
-    export class LineItem extends jspb.Message { 
+    export class LineItem extends jspb.Message {
         getTitle(): string;
         setTitle(value: string): LineItem;
 
@@ -134,7 +134,7 @@ export namespace Invoice {
 
 }
 
-export class InvoiceList extends jspb.Message { 
+export class InvoiceList extends jspb.Message {
     clearInvoicesList(): void;
     getInvoicesList(): Array<Invoice>;
     setInvoicesList(value: Array<Invoice>): InvoiceList;
@@ -157,7 +157,7 @@ export namespace InvoiceList {
     }
 }
 
-export class InvoiceError extends jspb.Message { 
+export class InvoiceError extends jspb.Message {
     getOpIndex(): number;
     setOpIndex(value: number): InvoiceError;
 

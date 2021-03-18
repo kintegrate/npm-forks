@@ -4,12 +4,12 @@
 /* tslint:disable */
 /* eslint-disable */
 
-import * as jspb from "google-protobuf";
+import * as jspb from "@kintegrate/google-protobuf";
 import * as validate_validate_pb from "../../validate/validate_pb";
 import * as common_v3_model_pb from "../../common/v3/model_pb";
 import * as common_v4_model_pb from "../../common/v4/model_pb";
 
-export class GetServiceConfigRequest extends jspb.Message { 
+export class GetServiceConfigRequest extends jspb.Message {
 
     serializeBinary(): Uint8Array;
     toObject(includeInstance?: boolean): GetServiceConfigRequest.AsObject;
@@ -26,7 +26,7 @@ export namespace GetServiceConfigRequest {
     }
 }
 
-export class GetServiceConfigResponse extends jspb.Message { 
+export class GetServiceConfigResponse extends jspb.Message {
 
     hasSubsidizerAccount(): boolean;
     clearSubsidizerAccount(): void;
@@ -64,7 +64,7 @@ export namespace GetServiceConfigResponse {
     }
 }
 
-export class GetMinimumKinVersionRequest extends jspb.Message { 
+export class GetMinimumKinVersionRequest extends jspb.Message {
 
     serializeBinary(): Uint8Array;
     toObject(includeInstance?: boolean): GetMinimumKinVersionRequest.AsObject;
@@ -81,7 +81,7 @@ export namespace GetMinimumKinVersionRequest {
     }
 }
 
-export class GetMinimumKinVersionResponse extends jspb.Message { 
+export class GetMinimumKinVersionResponse extends jspb.Message {
     getVersion(): number;
     setVersion(value: number): GetMinimumKinVersionResponse;
 
@@ -102,7 +102,7 @@ export namespace GetMinimumKinVersionResponse {
     }
 }
 
-export class GetRecentBlockhashRequest extends jspb.Message { 
+export class GetRecentBlockhashRequest extends jspb.Message {
 
     serializeBinary(): Uint8Array;
     toObject(includeInstance?: boolean): GetRecentBlockhashRequest.AsObject;
@@ -119,7 +119,7 @@ export namespace GetRecentBlockhashRequest {
     }
 }
 
-export class GetRecentBlockhashResponse extends jspb.Message { 
+export class GetRecentBlockhashResponse extends jspb.Message {
 
     hasBlockhash(): boolean;
     clearBlockhash(): void;
@@ -143,7 +143,7 @@ export namespace GetRecentBlockhashResponse {
     }
 }
 
-export class GetMinimumBalanceForRentExemptionRequest extends jspb.Message { 
+export class GetMinimumBalanceForRentExemptionRequest extends jspb.Message {
     getSize(): number;
     setSize(value: number): GetMinimumBalanceForRentExemptionRequest;
 
@@ -164,7 +164,7 @@ export namespace GetMinimumBalanceForRentExemptionRequest {
     }
 }
 
-export class GetMinimumBalanceForRentExemptionResponse extends jspb.Message { 
+export class GetMinimumBalanceForRentExemptionResponse extends jspb.Message {
     getLamports(): number;
     setLamports(value: number): GetMinimumBalanceForRentExemptionResponse;
 
@@ -185,7 +185,7 @@ export namespace GetMinimumBalanceForRentExemptionResponse {
     }
 }
 
-export class GetHistoryRequest extends jspb.Message { 
+export class GetHistoryRequest extends jspb.Message {
 
     hasAccountId(): boolean;
     clearAccountId(): void;
@@ -226,7 +226,7 @@ export namespace GetHistoryRequest {
 
 }
 
-export class GetHistoryResponse extends jspb.Message { 
+export class GetHistoryResponse extends jspb.Message {
     getResult(): GetHistoryResponse.Result;
     setResult(value: GetHistoryResponse.Result): GetHistoryResponse;
 
@@ -259,7 +259,7 @@ export namespace GetHistoryResponse {
 
 }
 
-export class SubmitTransactionRequest extends jspb.Message { 
+export class SubmitTransactionRequest extends jspb.Message {
 
     hasTransaction(): boolean;
     clearTransaction(): void;
@@ -300,7 +300,7 @@ export namespace SubmitTransactionRequest {
     }
 }
 
-export class SubmitTransactionResponse extends jspb.Message { 
+export class SubmitTransactionResponse extends jspb.Message {
     getResult(): SubmitTransactionResponse.Result;
     setResult(value: SubmitTransactionResponse.Result): SubmitTransactionResponse;
 
@@ -351,7 +351,7 @@ export namespace SubmitTransactionResponse {
 
 }
 
-export class GetTransactionRequest extends jspb.Message { 
+export class GetTransactionRequest extends jspb.Message {
 
     hasTransactionId(): boolean;
     clearTransactionId(): void;
@@ -379,7 +379,7 @@ export namespace GetTransactionRequest {
     }
 }
 
-export class GetTransactionResponse extends jspb.Message { 
+export class GetTransactionResponse extends jspb.Message {
     getState(): GetTransactionResponse.State;
     setState(value: GetTransactionResponse.State): GetTransactionResponse;
 
@@ -423,7 +423,7 @@ export namespace GetTransactionResponse {
 
 }
 
-export class HistoryItem extends jspb.Message { 
+export class HistoryItem extends jspb.Message {
 
     hasTransactionId(): boolean;
     clearTransactionId(): void;
@@ -490,7 +490,7 @@ export namespace HistoryItem {
     }
 
 
-    export class Payment extends jspb.Message { 
+    export class Payment extends jspb.Message {
 
         hasSource(): boolean;
         clearSource(): void;
@@ -532,7 +532,7 @@ export namespace HistoryItem {
 
     export enum RawTransactionCase {
         RAW_TRANSACTION_NOT_SET = 0,
-    
+
     SOLANA_TRANSACTION = 3,
 
     STELLAR_TRANSACTION = 4,
@@ -541,7 +541,7 @@ export namespace HistoryItem {
 
 }
 
-export class Cursor extends jspb.Message { 
+export class Cursor extends jspb.Message {
     getValue(): Uint8Array | string;
     getValue_asU8(): Uint8Array;
     getValue_asB64(): string;

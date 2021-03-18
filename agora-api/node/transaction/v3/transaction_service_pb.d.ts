@@ -4,11 +4,11 @@
 /* tslint:disable */
 /* eslint-disable */
 
-import * as jspb from "google-protobuf";
+import * as jspb from "@kintegrate/google-protobuf";
 import * as validate_validate_pb from "../../validate/validate_pb";
 import * as common_v3_model_pb from "../../common/v3/model_pb";
 
-export class GetHistoryRequest extends jspb.Message { 
+export class GetHistoryRequest extends jspb.Message {
 
     hasAccountId(): boolean;
     clearAccountId(): void;
@@ -49,7 +49,7 @@ export namespace GetHistoryRequest {
 
 }
 
-export class GetHistoryResponse extends jspb.Message { 
+export class GetHistoryResponse extends jspb.Message {
     getResult(): GetHistoryResponse.Result;
     setResult(value: GetHistoryResponse.Result): GetHistoryResponse;
 
@@ -82,7 +82,7 @@ export namespace GetHistoryResponse {
 
 }
 
-export class SubmitTransactionRequest extends jspb.Message { 
+export class SubmitTransactionRequest extends jspb.Message {
     getEnvelopeXdr(): Uint8Array | string;
     getEnvelopeXdr_asU8(): Uint8Array;
     getEnvelopeXdr_asB64(): string;
@@ -112,7 +112,7 @@ export namespace SubmitTransactionRequest {
     }
 }
 
-export class SubmitTransactionResponse extends jspb.Message { 
+export class SubmitTransactionResponse extends jspb.Message {
     getResult(): SubmitTransactionResponse.Result;
     setResult(value: SubmitTransactionResponse.Result): SubmitTransactionResponse;
 
@@ -164,7 +164,7 @@ export namespace SubmitTransactionResponse {
 
 }
 
-export class GetTransactionRequest extends jspb.Message { 
+export class GetTransactionRequest extends jspb.Message {
 
     hasTransactionHash(): boolean;
     clearTransactionHash(): void;
@@ -188,7 +188,7 @@ export namespace GetTransactionRequest {
     }
 }
 
-export class GetTransactionResponse extends jspb.Message { 
+export class GetTransactionResponse extends jspb.Message {
     getState(): GetTransactionResponse.State;
     setState(value: GetTransactionResponse.State): GetTransactionResponse;
 
@@ -226,7 +226,7 @@ export namespace GetTransactionResponse {
 
 }
 
-export class HistoryItem extends jspb.Message { 
+export class HistoryItem extends jspb.Message {
 
     hasHash(): boolean;
     clearHash(): void;
@@ -276,7 +276,7 @@ export namespace HistoryItem {
     }
 }
 
-export class Cursor extends jspb.Message { 
+export class Cursor extends jspb.Message {
     getValue(): Uint8Array | string;
     getValue_asU8(): Uint8Array;
     getValue_asB64(): string;

@@ -4,11 +4,11 @@
 /* tslint:disable */
 /* eslint-disable */
 
-import * as jspb from "google-protobuf";
+import * as jspb from "@kintegrate/google-protobuf";
 import * as validate_validate_pb from "../../validate/validate_pb";
 import * as common_v3_model_pb from "../../common/v3/model_pb";
 
-export class AccountInfo extends jspb.Message { 
+export class AccountInfo extends jspb.Message {
 
     hasAccountId(): boolean;
     clearAccountId(): void;
@@ -40,7 +40,7 @@ export namespace AccountInfo {
     }
 }
 
-export class CreateAccountRequest extends jspb.Message { 
+export class CreateAccountRequest extends jspb.Message {
 
     hasAccountId(): boolean;
     clearAccountId(): void;
@@ -64,7 +64,7 @@ export namespace CreateAccountRequest {
     }
 }
 
-export class CreateAccountResponse extends jspb.Message { 
+export class CreateAccountResponse extends jspb.Message {
     getResult(): CreateAccountResponse.Result;
     setResult(value: CreateAccountResponse.Result): CreateAccountResponse;
 
@@ -98,7 +98,7 @@ export namespace CreateAccountResponse {
 
 }
 
-export class GetAccountInfoRequest extends jspb.Message { 
+export class GetAccountInfoRequest extends jspb.Message {
 
     hasAccountId(): boolean;
     clearAccountId(): void;
@@ -122,7 +122,7 @@ export namespace GetAccountInfoRequest {
     }
 }
 
-export class GetAccountInfoResponse extends jspb.Message { 
+export class GetAccountInfoResponse extends jspb.Message {
     getResult(): GetAccountInfoResponse.Result;
     setResult(value: GetAccountInfoResponse.Result): GetAccountInfoResponse;
 
@@ -156,7 +156,7 @@ export namespace GetAccountInfoResponse {
 
 }
 
-export class GetEventsRequest extends jspb.Message { 
+export class GetEventsRequest extends jspb.Message {
 
     hasAccountId(): boolean;
     clearAccountId(): void;
@@ -180,7 +180,7 @@ export namespace GetEventsRequest {
     }
 }
 
-export class Events extends jspb.Message { 
+export class Events extends jspb.Message {
     getResult(): Events.Result;
     setResult(value: Events.Result): Events;
 
@@ -213,7 +213,7 @@ export namespace Events {
 
 }
 
-export class Event extends jspb.Message { 
+export class Event extends jspb.Message {
 
     hasAccountUpdateEvent(): boolean;
     clearAccountUpdateEvent(): void;
@@ -247,7 +247,7 @@ export namespace Event {
 
     export enum TypeCase {
         TYPE_NOT_SET = 0,
-    
+
     ACCOUNT_UPDATE_EVENT = 1,
 
     TRANSACTION_EVENT = 2,
@@ -256,7 +256,7 @@ export namespace Event {
 
 }
 
-export class AccountUpdateEvent extends jspb.Message { 
+export class AccountUpdateEvent extends jspb.Message {
 
     hasAccountInfo(): boolean;
     clearAccountInfo(): void;
@@ -280,7 +280,7 @@ export namespace AccountUpdateEvent {
     }
 }
 
-export class TransactionEvent extends jspb.Message { 
+export class TransactionEvent extends jspb.Message {
     getEnvelopeXdr(): Uint8Array | string;
     getEnvelopeXdr_asU8(): Uint8Array;
     getEnvelopeXdr_asB64(): string;
